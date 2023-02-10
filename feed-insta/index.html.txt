@@ -1,0 +1,29 @@
+<div id="modoinsta">
+
+  <div id="instagram-feed" class="instagram_wid"></div>
+  
+  <script src="https://rawartsites.neocities.org/js/InstagramFeed.js" type="text/javascript"></script>
+  
+  <script>
+    (function(){
+        new InstagramFeed({
+            'username': 'jornalcatnews',
+            'container': document.getElementById("instagram-feed"),
+            'display_profile': true,
+            'display_biography': true,
+            'display_gallery': true,
+            'display_captions': false,
+            'callback': null,
+            'styling': true,
+            'items': 8,
+            'items_per_row': 8,
+            'margin': 0.1,
+            'lazy_load': false,
+            'on_error': console.error,
+            'cache_time': 360,
+            'host': "https://images" + ~~(Math.random() * 3333) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/"
+              });
+        })();
+</script>
+  
+</div>
